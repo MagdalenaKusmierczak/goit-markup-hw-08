@@ -1,0 +1,40 @@
+.media {
+  &__heading {
+    font-size: inherit;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $pure-white;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    font-style: normal;
+  }
+  &__list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+  &__icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms;
+    transition-timing-function: $main-transition-cubic;
+  }
+  &__footer {
+    fill: $pure-white;
+    background-color: $grey-circle;
+  }
+  &__footer:hover,
+  &__footer:focus {
+    background-color: $brand-color;
+  }
+  &__team {
+    fill: $grey-icons;
+  }
+  &__team:hover,
+  &__team:focus {
+    fill: $pure-white;
+    background-color: $brand-color;
+  }
+}

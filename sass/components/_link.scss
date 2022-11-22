@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 250ms;
+  transition-timing-function: $main-transition-cubic;
+  &:hover,
+  &:focus {
+    color: $brand-color;
+  }
+  &:active,
+  &:visited {
+    color: initial;
+  }
+}

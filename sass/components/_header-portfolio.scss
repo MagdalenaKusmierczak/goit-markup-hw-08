@@ -1,0 +1,11 @@
+.header-portfolio .navigation__highlight::after {
+  content: "";
+  display: block;
+  background-color: $brand-color;
+  width: 58px;
+  height: 4px;
+  border: 1px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -1px;
+}

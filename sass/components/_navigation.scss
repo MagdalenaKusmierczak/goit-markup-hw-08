@@ -1,0 +1,21 @@
+.navigation {
+  display: flex;
+  flex-grow: 2;
+
+  &__list {
+    display: flex;
+    padding-left: 93px;
+    gap: 46px;
+  }
+  &__highlight {
+    color: $brand-color;
+  }
+  &__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $brand-color;
+  }
+}

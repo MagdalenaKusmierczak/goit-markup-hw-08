@@ -1,0 +1,32 @@
+.description {
+  padding-bottom: 0px;
+  &__list {
+    display: flex;
+    justify-items: center;
+    gap: 30px;
+  }
+  &__decoration {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: $secound-white;
+    border-radius: 4px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  &__paragraf {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $grey-tone;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}
