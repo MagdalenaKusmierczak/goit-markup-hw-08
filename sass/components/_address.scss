@@ -1,9 +1,9 @@
 .address {
   &__list {
+    color: $pure-white;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: $pure-white;
     display: flex;
     flex-direction: column;
     gap: 9px;

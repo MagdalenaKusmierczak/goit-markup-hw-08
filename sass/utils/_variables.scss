@@ -1,13 +1,42 @@
+// Colors
 $brand-color: #2196f3;
 $body-color: #e5e5e5;
+$modal-background: rgba(0, 0, 0, 0.2);
+$modal-closing-border: rgba(0, 0, 0, 0.1);
+$placeholder-input: rgba(117, 117, 117, 0.5);
+$fieldset-border: rgba(33, 33, 33, 0.2);
 $pure-white: #fff;
+$overlay-background: rgba(33, 150, 243, 0.9);
 $secound-white: #f5f4fa;
+$workspace-overlay: rgba(47, 48, 58, 0.8);
+$main-black: #212121;
 $creme-white: #ececec;
+$subscribtion-fieldset-border: rgba(255, 255, 255, 0.3);
+$caption-border-white: #eee;
 $grey-icons: #afb1b8;
 $grey-circle: rgba(255, 255, 255, 0.1);
 $grey-tone: #757575;
+$client-border: #afb1b8;
 $grey-shadow: rgba(255, 255, 255, 0.6);
+// Shadows
+$team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
 $background-blueish: #2f303a;
+$body-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+$button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$button-hover-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+$projects-hover-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+$modal-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+// Gradients
+$main-background-gradient: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+);
+// Fonts
 $main-font: "Roboto", sans-serif;
 $logo-font: "Raleway", sans-serif;
+// Transitions
 $main-transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);

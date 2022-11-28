@@ -1,6 +1,6 @@
 .modal {
   display: flex;
-  background: rgba(0, 0, 0, 0.2);
+  background: $modal-background;
   position: fixed;
   left: 0;
   right: 0;
@@ -15,8 +15,7 @@
     width: 528px;
     height: 581px;
     background-color: $pure-white;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: $modal-box-shadow;
     border-radius: 4px;
     cursor: initial;
     margin: auto;
@@ -29,7 +28,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid $modal-closing-border;
     background-color: $pure-white;
     cursor: pointer;
   }
@@ -75,7 +74,7 @@
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: $placeholder-input;
   }
 
   &__fieldset {
@@ -83,7 +82,7 @@
     position: relative;
     width: 448px;
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $fieldset-border;
     border-radius: 4px;
     margin-bottom: 28px;
     margin-left: 40px;

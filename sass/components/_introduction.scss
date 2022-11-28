@@ -1,9 +1,6 @@
 .introduction {
   background-color: $background-blueish;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: $main-background-gradient,
     url("../images/backgroundimage.jpg");
   background-size: cover;
   background-clip: padding-box;
