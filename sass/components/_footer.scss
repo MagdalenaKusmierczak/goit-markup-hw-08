@@ -4,10 +4,26 @@
   padding-bottom: 60px;
   &__wrapper {
     display: flex;
-    gap: 70px;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      gap: 70px;
+    }
   }
   .logo {
+    display: flex;
+    justify-content: center;
     color: $pure-white;
     padding-bottom: 20px;
+    @include desktop {
+      text-align: left;
+      justify-content: flex-start;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .team {
   background-color: $secound-white;
+
   &__heading {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -17,10 +18,7 @@
     text-align: center;
     color: $grey-tone;
   }
-  &__list {
-    justify-content: center;
-    padding-bottom: 30px;
-  }
+
   &__member {
     background-color: $pure-white;
     box-shadow: $team-shadow;
@@ -28,7 +26,19 @@
   }
   &__figure {
     display: block;
-    width: 100%;
     margin: 0 0;
+  }
+
+  &__list {
+    justify-content: center;
+    padding-bottom: 24px;
+    @include desktop {
+      padding-bottom: 30px;
+    }
+  }
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 }

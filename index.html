@@ -80,7 +80,7 @@
           </button>
         </div>
       </div>
- <section class="section description">
+      <section class="section description">
         <div class="container">
           <ul class="list description__list">
             <li class="description__element">
@@ -135,7 +135,7 @@
           </ul>
         </div>
       </section>
-            <section class="section workspace">
+      <section class="section workspace">
         <div class="container">
           <h2 class="text section__heading">Czym się zajmujemy</h2>
           <ul class="list section__list">
@@ -147,28 +147,21 @@
                   alt="Prezentacja przestrzeni roboczej. Osoba pisze na klawiaturze, przed nią znajduje się rysunek techniczny, tablet oraz laptop."
                   width="370"
                   height="294"
-                  srcset="./images/box1.jpg 1x,
-    ./images/box1@2x.jpg   2x,
-  "
-    
+                  srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
               /></a>
               <div class="workspace__overlay">
                 <p class="text workspace__paragraph">aplikacje komputerowe</p>
               </div>
             </li>
             <li class="workspace__element">
-              <a class="link worskspace__link" href="/"
-                >
-                
+              <a class="link worskspace__link" href="/">
                 <img
                   class="workspace__image"
                   src="./images/box2.jpg"
                   alt="Prezentacja projektowania aplikacji mobinej. Projektant wyświetla na monitorze komputera trzy propozycje wyświetlania strony internetowej na smartphonie i porównuje je z tym co widzi na swoim telefonie."
                   width="370"
                   height="294"
-                  srcset="./images/box2.jpg 1x,
-    ./images/box2@2x.jpg   2x,
-  "
+                  srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
               /></a>
               <div class="workspace__overlay">
                 <p class="text workspace__paragraph">aplikacje mobilne</p>
@@ -182,9 +175,7 @@
                   alt="Prezentacja tworzenia wizualnego aspektu stron. Projektant trzyma w dłoni tablet, na którym wyświetla się paleta barw do wyboru w projekcie"
                   width="370"
                   height="294"
-                  srcset="./images/box3.jpg 1x,
-    ./images/box3@2x.jpg   2x,
-  "
+                  srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
               /></a>
               <div class="workspace__overlay">
                 <p class="text workspace__paragraph">rozwiązania graficzne</p>
@@ -193,21 +184,44 @@
           </ul>
         </div>
       </section>
-     <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="text section__heading">Nasz zespół</h2>
           <ul class="list section__list">
             <li class="team__member">
-              <figure class="team__figure">
-                <img
-                  class="team__image"
-                  src="./images/productdesigner.jpg"
-                  alt="Zdjęcie naszego Product Designera"
-                  width="270"
-                  height="260"
-
-                />
-                <figcaption class="team__caption">
+              <div class="team__figure">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/productdesignermobile.jpg    1x,
+                      ./images/productdesignermobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/productdesignertablet.jpg    1x,
+                      ./images/productdesignertablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/productdesignerdesktop.jpg    1x,
+                      ./images/productdesignerdesktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__image"
+                    src="./images/productdesigner.jpg"
+                    alt="Zdjęcie naszego Product Designera"
+                  />
+                </picture>
+                <div class="team__caption">
                   <h4 class="text team__heading">John Doe</h4>
                   <p class="text team__description">Product Designer</p>
                   <ul class="list media__list team__list">
@@ -264,19 +278,44 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <li class="team__member">
-              <figure class="team__figure">
-                <img
-                  class="team__image"
-                  src="./images/frontenddeveloper.jpg"
-                  alt="Zdjęcie naszej Frontend Deweloperki"
-                  width="270"
-                  height="260"
-                />
-                <figcaption class="team__caption">
+              <div class="team__figure">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/frontenddevelopermobile.jpg    1x,
+                      ./images/frontenddevelopermoblie@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontenddevelopertablet.jpg    1x,
+                      ./images/frontenddevelopertablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/frontenddeveloperdesktop.jpg    1x,
+                      ./images/frontenddeveloperdesktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__image"
+                    src="./images/frontenddeveloper.jpg"
+                    alt="Zdjęcie naszej Frontend Deweloperki"
+                  />
+                </picture>
+
+                <div class="team__caption">
                   <h4 class="text team__heading">John Doe</h4>
                   <p class="text team__description">Frontend Developer</p>
                   <ul class="list media__list team__list">
@@ -333,19 +372,43 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <li class="team__member">
-              <figure class="team__figure">
-                <img
-                  class="team__image"
-                  src="./images/marketing.jpg"
-                  alt="Zdjęcie naszego marketingowca"
-                  width="270"
-                  height="260"
-                />
-                <figcaption class="team__caption">
+              <div class="team__figure">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/marketingmobile.jpg    1x,
+                      ./images/marketingmobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/marketingtablet.jpg    1x,
+                      ./images/marketingtablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/marketingdesktop.jpg    1x,
+                      ./images/marketingdesktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__image"
+                    src="./images/marketing.jpg"
+                    alt="Zdjęcie naszego marketingowca"
+                  />
+                </picture>
+                <div class="team__caption">
                   <h4 class="text team__heading">John Doe</h4>
                   <p class="text team__description">Marketing</p>
                   <ul class="list media__list team__list">
@@ -402,19 +465,44 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
             <li class="team__member">
-              <figure class="team__figure">
-                <img
-                  class="team__image"
-                  src="./images/uidesigner.jpg"
-                  alt="Zdjęcie naszego UI Designera"
-                  width="270"
-                  height="260"
-                />
-                <figcaption class="team__caption">
+              <div class="team__figure">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/uidesignermobile.jpg    1x,
+                      ./images/uidesignermobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/uidesignertablet.jpg    1x,
+                      ./images/uidesignertablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1199px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/uidesignerdesktop.jpg    1x,
+                      ./images/uidesignerdesktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    class="team__image"
+                    src="./images/uidesigner.jpg"
+                    alt="Zdjęcie naszego UI Designera"
+                  />
+                </picture>
+
+                <div class="team__caption">
                   <h4 class="text team__heading">John Doe</h4>
                   <p class="text team__description">UI Designer</p>
                   <ul class="list media__list team__list">
@@ -470,15 +558,15 @@
                       ></a>
                     </li>
                   </ul>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <!-- <section class="section clients">
+      <section class="section clients">
         <div class="container">
-          <h2 class="section__heading">Nasi klienci</h2>
+          <h2 class="section__heading text">Nasi klienci</h2>
           <ul class="list section__list clients__list">
             <li class="clients__element">
               <a href="./index.html"
@@ -602,7 +690,7 @@
                 >
 
                 <input
-                  class="subscription__input"
+                  class="subscription__input text"
                   type="email"
                   name="subscribtion-email"
                   id="sub-email"
@@ -620,8 +708,7 @@
         </div>
       </div>
     </footer>
-    >
-    <div class="modal is-hidden" data-modal>
+    <!--  <div class="modal is-hidden" data-modal>
       <div class="modal__box">
         <button class="modal__closing" type="button" data-modal-close>
           <svg class="modal__x">

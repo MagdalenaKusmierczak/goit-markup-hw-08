@@ -1,15 +1,31 @@
 .clients {
+  @include tablet {
+    padding-bottom: 24px;
+  }
+  @include desktop {
+    padding-bottom: 94px;
+  }
   &__element {
     border: 1px solid $client-border;
     border-radius: 4px;
-    width: 170px;
-    height: 92px;
     transition: fill 250ms, border-color 250ms;
     transition-timing-function: $main-transition-cubic;
+    width: 210px;
+    height: 92px;
+    @include tablet {
+      width: 226px;
+    }
+    @include desktop {
+      width: 170px;
+      height: 92px;
+    }
   }
   &__list {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
+    @include desktop {
+      flex-wrap: nowrap;
+    }
   }
   &__logo {
     width: 100%;

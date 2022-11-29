@@ -4,15 +4,24 @@
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: $pure-white;
-    padding-top: 12px;
-    padding-bottom: 20px;
     font-style: normal;
+    color: $pure-white;
+    padding-bottom: 20px;
+    text-align: center;
+    @include desktop {
+      padding-top: 10px;
+      text-align: left;
+    }
   }
   &__list {
     display: flex;
     gap: 10px;
     flex-wrap: nowrap;
+    justify-content: center;
+    padding-bottom: 60px;
+    @include tablet{
+     padding-bottom: 102px; 
+    }
   }
   &__icon {
     width: 44px;
