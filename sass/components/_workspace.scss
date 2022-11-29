@@ -1,4 +1,8 @@
 .workspace {
+  display: none;
+  @include desktop {
+    display: block;
+  }
   &__element {
     position: relative;
   }
