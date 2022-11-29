@@ -1,5 +1,12 @@
 .container {
-  max-width: 1200px;
   padding: 0 15px;
   margin: auto;
+  min-width: 290px;
+  max-width: 480px;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }

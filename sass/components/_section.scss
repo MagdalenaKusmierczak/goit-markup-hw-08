@@ -1,13 +1,22 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__heading {
-    padding-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    padding-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
     letter-spacing: 0.03em;
     text-align: center;
+    font-weight: 700;
+    @include desktop {
+      padding-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.16;
+    }
   }
   &__list {
     display: flex;

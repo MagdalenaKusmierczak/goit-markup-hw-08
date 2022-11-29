@@ -1,24 +1,59 @@
 .description {
-  padding-bottom: 0px;
+  @include tablet {
+    padding-bottom: 45px;
+  }
+  @include desktop {
+    padding-bottom: 0px;
+  }
   &__list {
     display: flex;
-    justify-items: center;
+    align-items: center;
+    flex-direction: column;
     gap: 30px;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-items: center;
+    }
+  }
+  &__element {
+    max-width: 450px;
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 270px;
+    }
   }
   &__decoration {
     display: flex;
-    width: 270px;
-    height: 120px;
     background-color: $secound-white;
     border-radius: 4px;
     justify-content: space-around;
     align-items: center;
+    max-width: 450px;
+    height: 120px;
+    @include tablet {
+      max-width: 354px;
+      height: 120px;
+    }
+    @include desktop {
+      max-width: 270px;
+      height: 120px;
+    }
   }
+
   &__heading {
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 10px;
     padding-top: 30px;
+    font-family: "Roboto";
+    text-align: center;
+    letter-spacing: 0.03em;
+    @include tablet {
+      text-align: left;
+    }
   }
   &__paragraf {
     line-height: 1.71;
