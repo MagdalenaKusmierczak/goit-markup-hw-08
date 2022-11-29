@@ -12,19 +12,24 @@
 
   &__box {
     box-sizing: border-box;
-    width: 528px;
-    height: 581px;
     background-color: $pure-white;
     box-shadow: $modal-box-shadow;
     border-radius: 4px;
     cursor: initial;
-    margin: auto;
     position: relative;
+    width: 450px;
+    height: 609px;
+    margin: 94px auto auto;
+    @include desktop {
+      margin: auto;
+      width: 528px;
+      height: 581px;
+    }
   }
   &__closing {
     position: absolute;
-    top: 14px;
-    right: 14px;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -36,6 +41,11 @@
     fill: #000;
     width: 11px;
     height: 11px;
+    transition: fill 250ms;
+    transition-timing-function: $main-transition-cubic;
+  }
+  &__closing:hover &__x {
+    fill: $brand-color;
   }
   &__form {
     width: 100%;
