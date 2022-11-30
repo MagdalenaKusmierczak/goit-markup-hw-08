@@ -44,7 +44,8 @@
     transition: fill 250ms;
     transition-timing-function: $main-transition-cubic;
   }
-  &__closing:hover &__x {
+  &__closing:hover &__x,
+  &__closing:focus &__x {
     fill: $brand-color;
   }
   &__form {
@@ -149,7 +150,7 @@
     margin-bottom: 40px;
     padding: 0;
     @include desktop {
-       margin-left: 164px;
+      margin-left: 164px;
     }
   }
 

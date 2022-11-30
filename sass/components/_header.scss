@@ -1,14 +1,43 @@
 .header {
-  padding: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: $pure-white;
   border-bottom: 1px solid $creme-white;
   position: relative;
-
+  @include tablet {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  &__menu {
+    margin-right: 0;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0 0;
+    width: 40px;
+    height: 40px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__menu-icon {
+    width: 40px;
+    height: 40px;
+    fill: $main-black;
+    transition: fill 250ms;
+    transition-timing-function: $main-transition-cubic;
+  }
+  &__menu:hover &__menu-icon,
+  &__menu:focus &__menu-icon {
+    fill: $brand-color;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 2px;
+    @include tablet {
+      justify-content: space-between;
+    }
   }
   .logo {
     color: #000;

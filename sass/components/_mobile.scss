@@ -1,0 +1,45 @@
+.mobile {
+  display: flex;
+  background: $pure-white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: visibility, opacity;
+  transition-duration: 500ms;
+  transition-timing-function: $main-transition-cubic;
+  cursor: initial;
+  flex-direction: column;
+  justify-content: space-between;
+  @include tablet {
+    display: none;
+  }
+  &__closing {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background-color: $pure-white;
+    cursor: pointer;
+  }
+  &__x {
+    fill: #000;
+    width: 40px;
+    height: 40px;
+    transition: fill 250ms;
+    transition-timing-function: $main-transition-cubic;
+  }
+  &__closing:hover &__x,
+  &__closing:focus &__x {
+    fill: $brand-color;
+  }
+  &__media-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+}

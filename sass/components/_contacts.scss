@@ -1,22 +1,55 @@
 .contacts {
-  display: flex;
-  justify-self: flex-end;
-  align-items: center;
-
+  display: none;
+  @include tablet {
+    display: block;
+  }
+  @include desktop {
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+  }
+  &__mobile {
+    display: block;
+    margin-left: 40px;
+  }
   &__list {
     display: flex;
-    gap: 50px;
-    padding-right: 2px;
+    flex-direction: column;
+    gap: 32px;
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
   }
 
   &__link {
-    display: flex;
-    align-items: center;
     font-weight: 500;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.16;
     color: $grey-tone;
+    letter-spacing: 0.02em;
+    @include desktop {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      line-height: 1.428;
+    }
   }
-
+  &__link-phone {
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: $brand-color;
+  }
+  &__link-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16px;
+  }
   &__icon {
     display: inline-block;
     height: 16px;

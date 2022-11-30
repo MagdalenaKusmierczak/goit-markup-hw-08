@@ -1,18 +1,45 @@
 .navigation {
-  display: flex;
-  flex-grow: 2;
-
+  display: none;
+  @include tablet {
+    display: block;
+    flex-grow: 2;
+  }
+  @include desktop {
+    display: flex;
+  }
+  &__mobile {
+    display: block;
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-bottom: 302px;
+  }
   &__list {
     display: flex;
-    padding-left: 93px;
-    gap: 46px;
+    flex-direction: column;
+    gap: 32px;
+    @include tablet {
+      flex-direction: row;
+      padding-left: 83px;
+      gap: 60px;
+    }
+    @include desktop {
+      padding-left: 93px;
+      gap: 46px;
+    }
   }
   &__highlight {
+    display: block;
     color: $brand-color;
   }
   &__link {
     font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
     letter-spacing: 0.02em;
+    @include tablet {
+      font-size: 14px;
+      line-height: 1.14;
+    }
   }
   &__link:hover,
   &__link:focus {
