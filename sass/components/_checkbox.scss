@@ -5,10 +5,13 @@
     width: 16px;
     height: 15px;
     left: -22px;
-    top: 3px;
+    top: -1.5px;
     border-radius: 2px;
     transition: background-color 250ms;
     transition-timing-function: $main-transition-cubic;
+    @include desktop {
+      top: 3px;
+    }
   }
   &__check {
     width: 13px;
@@ -22,11 +25,14 @@
     position: absolute;
     cursor: pointer;
     left: -22px;
-    top: 3px;
+    top: -1.5px;
     width: 16px;
     height: 15px;
     border: 2px $main-black solid;
     border-radius: 2px;
+    @include desktop {
+      top: 3px;
+    }
   }
   &__input--hidden {
     -moz-appearance: none;
