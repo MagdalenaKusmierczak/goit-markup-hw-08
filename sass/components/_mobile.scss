@@ -1,5 +1,5 @@
 .mobile {
-  display: flex;
+  z-index: 2;
   background: $pure-white;
   position: fixed;
   left: 0;
@@ -12,9 +12,14 @@
   cursor: initial;
   flex-direction: column;
   justify-content: space-between;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
   @include tablet {
     display: none;
   }
+  &.is-open {
+  transform: translateY(0);
+}
   &__closing {
     position: absolute;
     top: 10px;
@@ -39,7 +44,21 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-
     color: #2196f3;
+    text-decoration: none;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__media-link-last {
+    border-right: none;
+  }
+
+  &__media-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 64px;
+    margin-left: 40px;
+    margin-bottom: 48px;
+    gap: 10px;
   }
 }
