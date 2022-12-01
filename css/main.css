@@ -610,6 +610,11 @@
     padding-bottom: 102px;
   }
 }
+@media (min-width: 1200px) {
+  .media__list {
+    padding-bottom: 0px;
+  }
+}
 .media__icon {
   width: 44px;
   height: 44px;
@@ -708,21 +713,46 @@
 }
 
 .project {
-  padding-top: 50px;
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .project {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .project {
+    padding-top: 50px;
+  }
 }
 .project__list {
-  flex-basis: auto;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .project__list {
+    justify-content: flex-start;
+  }
+}
 .project__description {
-  max-width: 370px;
+  max-width: 450px;
   background-color: #fff;
   overflow: hidden;
   transition: box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .project__description {
+    max-width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .project__description {
+    max-width: 370px;
+  }
 }
 .project__description:hover, .project__description:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -788,22 +818,53 @@
 .menu__list {
   display: flex;
   gap: 8px;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+@media (min-width: 768px) {
+  .menu__list {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 .menu__button {
   background-color: #f5f4fa;
   font-weight: 500;
-  line-height: 1.62;
+  line-height: 1.625;
   letter-spacing: 0.03em;
-  padding: 4px 18px;
+  padding-inline: auto;
   box-shadow: none;
   transition: box-shadow 250ms, color 250ms, border-color 250ms, background 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 1200px) {
+  .menu__button {
+    padding-block: 6px;
+    padding-inline: 22px;
+  }
 }
 .menu__button:hover, .menu_button:focus {
   background: #2196f3;
   color: #fff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 1199px) {
+  .menu__button--small {
+    width: 103px;
+    height: 38px;
+  }
+}
+@media (max-width: 1199px) {
+  .menu__button--middle {
+    width: 128px;
+    height: 38px;
+  }
+}
+@media (max-width: 1199px) {
+  .menu__button--big {
+    width: 145px;
+    height: 38px;
+  }
 }
 
 .footer {

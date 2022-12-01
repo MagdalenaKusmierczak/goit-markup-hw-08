@@ -1,19 +1,34 @@
 .project {
-  padding-top: 50px;
+  padding-top: 40px;
+  @include tablet {
+    padding-top: 30px;
+  }
+  @include desktop {
+    padding-top: 50px;
+  }
   &__list {
-    flex-basis: auto;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
+    @include tablet {
+    justify-content: flex-start
+  }
   }
 
   &__description {
-    max-width: 370px;
+    max-width: 450px;
     background-color: $pure-white;
     overflow: hidden;
     transition: box-shadow 250ms;
     transition-timing-function: $main-transition-cubic;
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      max-width: 370px;
+    }
   }
   &__description:hover,
   &__description:focus {

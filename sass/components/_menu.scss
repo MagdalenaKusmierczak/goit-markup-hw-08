@@ -3,18 +3,29 @@
   &__list {
     display: flex;
     gap: 8px;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @include tablet {
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
   }
   &__button {
     background-color: $secound-white;
     font-weight: 500;
-    line-height: 1.62;
+    line-height: 1.625;
     letter-spacing: 0.03em;
-    padding: 4px 18px;
+    padding-inline: auto;
+
     box-shadow: none;
     transition: box-shadow 250ms, color 250ms, border-color 250ms,
       background 250ms;
     transition-timing-function: $main-transition-cubic;
+    @include desktop {
+      padding-block: 6px;
+      padding-inline: 22px;
+    }
   }
 
   &__button:hover,
@@ -22,5 +33,23 @@
     background: $brand-color;
     color: $pure-white;
     box-shadow: $button-hover-shadow;
+  }
+  &__button--small {
+    @media (max-width: 1199px) {
+      width: 103px;
+      height: 38px;
+    }
+  }
+  &__button--middle {
+    @media (max-width: 1199px) {
+      width: 128px;
+      height: 38px;
+    }
+  }
+  &__button--big {
+    @media (max-width: 1199px) {
+      width: 145px;
+      height: 38px;
+    }
   }
 }
